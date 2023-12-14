@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrate</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="estilos_modal.css">
+</head>
+<body>
+    
+    <form class="form" id="formulario">
+        <h2 class="form_title"></h2>
+        <div class="form_cointaner">
+            <h2 class="form_title"> Formulario de Registro</h2>
+            <div class="form_group">
+                <input type="text" id="name" name="name"class="form_input" placeholder=" ">
+                <label for="name" class="form_label">Nombre del egresado: </label>
+                <span class="form_line"></span>
+            </div>
+
+            <div class="form_group">
+                <input type="text" id="area" name="area" class="form_input" placeholder=" ">
+                <label for="area" class="form_label">Area / Rol: </label>
+                <span class="form_line"></span>
+            </div>
+
+            <div class="form_group">
+                <input type="text" id="empresa" name="empresa" class="form_input" placeholder=" ">
+                <label for="empresa" class="form_label">Empresa donde laboras: </label>
+                <span class="form_line"></span>
+            </div>
+
+            <div class="form_group">
+                <input type="text" id="residencia" name="residencia" class="form_input" placeholder=" ">
+                <label for="residencia" class="form_label">Residencia (País / Ciudad): </label>
+                <span class="form_line"></span>
+            </div>
+
+            <div class="form_group">
+                <input type="text" id="trabajo" name="trabajo" class="form_input" placeholder=" ">
+                <label for="trabajo" class="form_label">Labora en (País / Ciudad): </label>
+                <span class="form_line"></span>
+            </div>
+            <!-- <input type="submit" class="form_submit" value="Enviar" id="btn" for="btn-modal"> -->
+            <!--Boton-->
+            <div class="boton-modal">
+                <label for="btn-modal">
+                    Enviar
+                </label>
+            </div>
+        </div>
+    </form>
+
+    <!-- <div class ="text-light " id="respuesta"></div> -->
+
+<!--Fin de Boton-->
+<!--Ventana Modal-->
+<input type="checkbox" id="btn-modal">
+<div class="container-modal">
+    <div class="content-modal">
+        <h2>Aviso de privacidad</h2>
+        <p>El comité organizador de la RED DE TELEMÁTICOS son los Responsables del tratamiento de los datos personales que nos proporcione, los cuales serán resguardados la plataforma donde se genera este formulario.
+
+<br><br>Los datos personales que recabemos serán utilizados con la finalidad de realizar estadisticas y obtener indicadores que seran compartidas en tableros Web ( Dashboard) para conocer el comportamiento de los egresados Telematicos. Los datos personales no serán transferidos a terceros, salvo las transferencias previstas en la Ley de Protección de Datos Personales en Posesión de Sujetos Obligados de la Ciudad de México.
+
+<br><br>Para las finalidades antes señaladas y para fines estadísticos a voluntad del usuario se podrán recabar los siguientes datos personales: nombre, fecha de nacimiento, domicilio, teléfono particular, teléfono celular, correo electrónico no oficial, nombre de usuario y contraseña. El ciclo de vida de los datos será de 6 años.
+
+<br><br>Podrás presentar tu solicitud para el ejercicio de los derechos de acceso, rectificación, cancelación u oposición de sus datos personales (derechos ARCO) directamente ante la Unidad de Transparencia del Instituto Politécnico Nacional, IPN, cuyos datos de contacto son:
+<ol type="a">
+<li><strong>Nombre de su titular:</strong> Lic. Federico Anaya Gallardo</li>
+<li><strong>Domicilio:</strong> Av. Wilfrido Massieu S/N, Edificio "Adolfo Ruiz Cortines, Planta baja Colonia
+Unidad Profesional Adolfo López Mateos, Zacatenco, Gustavo A. Madero, Ciudad de
+México., CP. 07738, Ciudad de México., México.</li>
+<li><strong>Correo electrónico:</strong> transparencia@ipn.mx</li>
+<li><strong>Número telefónico y extensión:</strong> 57296000 ext. 50088, 51986</li>
+<li><strong>Otro dato de contacto:</strong> Lic. Dalia Nora Guillermoprieto Gutiérrez al correo electrónico:
+dguillermoprietog@ipn.mx, teléfono: 57296000 Ext. 51970</li>
+</ol>
+
+
+<br>Asimismo, recuerda que, a través de la Plataforma Nacional de Transparencia, disponible en http://www.plataformadetransparencia.org.mx, también podrás presentar tu solicitud para ejercer derechos ARCO, o si lo prefieres, a través de un escrito libre dirigido al director de la unidad académica en la que se encuentres inscrito. Si deseas conocer más información sobre el procedimiento para el ejercicio de estos derechos, puedes acudir a la Unidad de Transparencia del IPN.
+</p>
+<input type="checkbox" id="politicaPrivacidad" class="checkbox">
+<label for="politicaPrivacidad" class="custom-checkbox">He leído y acepto la política de privacidad</label>
+<button id="botonEnviar" disabled>Enviar</button>
+
+<div class="btn-cerrar">
+<label for="btn-modal">Cerrar</label>
+</div>
+    </div>
+    <label for="btn-modal" class="cerrar-modal"></label>
+</div>
+<!--Fin de Ventana Modal-->
+    <script src="main.js"></script>
+    <script src="gestionCheckbox.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+{
+  "users": [
+    {
+      "name": "Ivan",
+      "boleta": "20232",
+      "password": "julion",
+      "id": 1
+    },
+    {
+      "name": "julio",
+      "boleta": "2021200085",
+      "password": "juliosote",
+      "id": 2
+    },
+    {
+      "name": "pepe",
+      "boleta": "2023",
+      "password": "cola",
+      "id": 3
+    },
+    {
+      "name": "pepe",
+      "boleta": "20234342",
+      "password": "perrito",
+      "id": 4
+    },
+    {
+      "name": "Ivan",
+      "area": "Ciencias",
+      "empresa": "Nasa",
+      "residencia": "Mexico",
+      "trabajo": "USA",
+      "id": 5
+    },
+    {
+      "name": "s",
+      "area": "s",
+      "empresa": "s",
+      "residencia": "s",
+      "trabajo": "s",
+      "id": 6
+    }
+  ]
+}

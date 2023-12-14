@@ -1,0 +1,119 @@
+
+/*:::Boton-Modal:::*/
+.boton-modal{
+    padding: 40px;
+    background-color: #fff;
+}
+.boton-modal label{
+    padding: 10px 75px;
+    background-color: #5488a3;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.boton-modal label:hover{
+    background-color: #185E83;
+}
+/*:::Fin Boton-Modal:::*/
+
+/*:::Ventana Modal:::*/
+#btn-modal{
+    display: none;
+}
+.container-modal{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0; left: 0;
+    background-color: rgba(144, 148, 150, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+#btn-modal:checked ~ .container-modal{
+    display: flex;
+}
+.content-modal{
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+ max-height: 70vh; /* Altura máxima de la ventana modal */
+    overflow-y: auto; /* Habilitar scroll vertical cuando sea necesario */
+}
+.content-modal h2{
+    margin-bottom: 15px;
+}
+.content-modal p{
+    padding: 15px 0px;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+#botonEnviar {
+    padding: 10px 20px; /* Ajusta el padding para tamaño mediano */
+    background-color: #5488a3; /* Azul de fondo */
+    color: #fff; /* Letra blanca */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición al pasar el mouse */
+}
+
+#botonEnviar:hover {
+    background-color: #185E83; /* Cambio de color al pasar el mouse */
+}
+
+#politicaPrivacidad:checked + label[for="politicaPrivacidad"] + #botonEnviar {
+    background-color: #185E83; /* Cambio de color cuando el checkbox está marcado */
+    pointer-events: auto; /* Habilita el botón cuando el checkbox está marcado */
+}
+
+
+
+.content-modal .btn-cerrar {
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+.content-modal .btn-cerrar label{
+    padding: 7px 10px;
+    background-color: #5488a3;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.content-modal .btn-cerrar label:hover{
+    background-color:#185E83;
+}
+.cerrar-modal{
+    width:100%;
+    height: 100vh;
+    position: absolute;
+    top:0; left: 0;
+    z-index: -1;
+}
+
+
+@media screen and (max-width:800px) {
+    .content-modal{
+        width: 90%;
+    }
+    .boton-modal {
+        font-size: 0.8rem; /* Reducir el tamaño de fuente */
+        padding: 0.6em 1em; /* Ajustar el padding */
+    }
+    
+    .content-modal {
+        width: 90%; /* Reducir el ancho máximo de la ventana modal */
+        max-width: 90%; /* Reducir el ancho máximo de la ventana modal */
+        max-height: 80vh; /* Ajustar la altura máxima de la ventana modal */
+    }
+}
+/*:::Fin Ventana Modal:::*/
+
